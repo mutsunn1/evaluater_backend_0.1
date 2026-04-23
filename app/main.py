@@ -881,6 +881,13 @@ async def main() -> None:
 
     Config.set_agent_llm_model("default_llm")
 
+    # Configure Elasticsearch for oxygent MAS
+    Config.set_es_config({
+        "hosts": [f"{settings.es_host}:{settings.es_port}"],
+        "user": "",
+        "password": "",
+    })
+
     oxy_space = [
         oxy.HttpLLM(
             name="default_llm",
