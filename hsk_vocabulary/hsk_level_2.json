@@ -1,0 +1,1602 @@
+[
+  {
+    "id": 301,
+    "level": "2",
+    "level_raw": "2",
+    "word": "啊",
+    "pinyin": "a",
+    "pos": "助"
+  },
+  {
+    "id": 302,
+    "level": "2",
+    "level_raw": "2",
+    "word": "爱好",
+    "pinyin": "àihào",
+    "pos": "动、名"
+  },
+  {
+    "id": 303,
+    "level": "2",
+    "level_raw": "2",
+    "word": "白色",
+    "pinyin": "báisè",
+    "pos": "名"
+  },
+  {
+    "id": 304,
+    "level": "2",
+    "level_raw": "2（5）",
+    "word": "班",
+    "pinyin": "bān",
+    "pos": "名、（量）"
+  },
+  {
+    "id": 305,
+    "level": "2",
+    "level_raw": "2",
+    "word": "帮",
+    "pinyin": "bāng",
+    "pos": "动"
+  },
+  {
+    "id": 306,
+    "level": "2",
+    "level_raw": "2",
+    "word": "帮忙",
+    "pinyin": "bāngmáng",
+    "pos": "动"
+  },
+  {
+    "id": 307,
+    "level": "2",
+    "level_raw": "2",
+    "word": "包",
+    "pinyin": "bāo",
+    "pos": "动、名、量"
+  },
+  {
+    "id": 308,
+    "level": "2",
+    "level_raw": "2",
+    "word": "本子",
+    "pinyin": "běnzi",
+    "pos": "名"
+  },
+  {
+    "id": 309,
+    "level": "2",
+    "level_raw": "2",
+    "word": "比",
+    "pinyin": "bǐ",
+    "pos": "动、介"
+  },
+  {
+    "id": 310,
+    "level": "2",
+    "level_raw": "2（5）",
+    "word": "笔",
+    "pinyin": "bǐ",
+    "pos": "名、（量）"
+  },
+  {
+    "id": 311,
+    "level": "2",
+    "level_raw": "2",
+    "word": "别1",
+    "pinyin": "bié",
+    "pos": "副"
+  },
+  {
+    "id": 312,
+    "level": "2",
+    "level_raw": "2",
+    "word": "不错",
+    "pinyin": "búcuò",
+    "pos": "形"
+  },
+  {
+    "id": 313,
+    "level": "2",
+    "level_raw": "2",
+    "word": "不好意思",
+    "pinyin": "bù hǎoyìsi",
+    "pos": ""
+  },
+  {
+    "id": 314,
+    "level": "2",
+    "level_raw": "2",
+    "word": "长",
+    "pinyin": "cháng",
+    "pos": "形"
+  },
+  {
+    "id": 315,
+    "level": "2",
+    "level_raw": "2",
+    "word": "车站",
+    "pinyin": "chēzhàn",
+    "pos": "名"
+  },
+  {
+    "id": 316,
+    "level": "2",
+    "level_raw": "2",
+    "word": "出",
+    "pinyin": "chū",
+    "pos": "动"
+  },
+  {
+    "id": 317,
+    "level": "2",
+    "level_raw": "2",
+    "word": "出国",
+    "pinyin": "chūguó",
+    "pos": "动"
+  },
+  {
+    "id": 318,
+    "level": "2",
+    "level_raw": "2",
+    "word": "出来",
+    "pinyin": "chūlái",
+    "pos": "动"
+  },
+  {
+    "id": 319,
+    "level": "2",
+    "level_raw": "2",
+    "word": "出门",
+    "pinyin": "chūmén",
+    "pos": "动"
+  },
+  {
+    "id": 320,
+    "level": "2",
+    "level_raw": "2",
+    "word": "出去",
+    "pinyin": "chūqù",
+    "pos": "动"
+  },
+  {
+    "id": 321,
+    "level": "2",
+    "level_raw": "2",
+    "word": "床",
+    "pinyin": "chuáng",
+    "pos": "名"
+  },
+  {
+    "id": 322,
+    "level": "2",
+    "level_raw": "2",
+    "word": "词",
+    "pinyin": "cí",
+    "pos": "名"
+  },
+  {
+    "id": 323,
+    "level": "2",
+    "level_raw": "2（7-9）",
+    "word": "次",
+    "pinyin": "cì",
+    "pos": "量、（形）"
+  },
+  {
+    "id": 324,
+    "level": "2",
+    "level_raw": "2（4）",
+    "word": "从",
+    "pinyin": "cóng",
+    "pos": "介、（副）"
+  },
+  {
+    "id": 325,
+    "level": "2",
+    "level_raw": "2",
+    "word": "从小",
+    "pinyin": "cóngxiǎo",
+    "pos": "副"
+  },
+  {
+    "id": 326,
+    "level": "2",
+    "level_raw": "2",
+    "word": "错",
+    "pinyin": "cuò",
+    "pos": "形"
+  },
+  {
+    "id": 327,
+    "level": "2",
+    "level_raw": "2",
+    "word": "打1",
+    "pinyin": "dǎ",
+    "pos": "动"
+  },
+  {
+    "id": 328,
+    "level": "2",
+    "level_raw": "2",
+    "word": "打车",
+    "pinyin": "dǎchē",
+    "pos": "动"
+  },
+  {
+    "id": 329,
+    "level": "2",
+    "level_raw": "2",
+    "word": "打开",
+    "pinyin": "dǎkāi",
+    "pos": "动"
+  },
+  {
+    "id": 330,
+    "level": "2",
+    "level_raw": "2（7-9）",
+    "word": "但",
+    "pinyin": "dàn",
+    "pos": "连、（副）"
+  },
+  {
+    "id": 331,
+    "level": "2",
+    "level_raw": "2",
+    "word": "但是",
+    "pinyin": "dànshì",
+    "pos": "连"
+  },
+  {
+    "id": 332,
+    "level": "2",
+    "level_raw": "2",
+    "word": "得",
+    "pinyin": "de",
+    "pos": "助"
+  },
+  {
+    "id": 333,
+    "level": "2",
+    "level_raw": "2",
+    "word": "地",
+    "pinyin": "de",
+    "pos": "助"
+  },
+  {
+    "id": 334,
+    "level": "2",
+    "level_raw": "2（4）",
+    "word": "等1",
+    "pinyin": "děng",
+    "pos": "动、（介）"
+  },
+  {
+    "id": 335,
+    "level": "2",
+    "level_raw": "2",
+    "word": "地铁",
+    "pinyin": "dìtiě",
+    "pos": "名"
+  },
+  {
+    "id": 336,
+    "level": "2",
+    "level_raw": "2（4）",
+    "word": "点2",
+    "pinyin": "diǎn",
+    "pos": "动、（名、量）"
+  },
+  {
+    "id": 337,
+    "level": "2",
+    "level_raw": "2",
+    "word": "懂",
+    "pinyin": "dǒng",
+    "pos": "动"
+  },
+  {
+    "id": 338,
+    "level": "2",
+    "level_raw": "2",
+    "word": "动",
+    "pinyin": "dòng",
+    "pos": "动"
+  },
+  {
+    "id": 339,
+    "level": "2",
+    "level_raw": "2",
+    "word": "饭馆",
+    "pinyin": "fànguǎn",
+    "pos": "名"
+  },
+  {
+    "id": 340,
+    "level": "2",
+    "level_raw": "2",
+    "word": "飞",
+    "pinyin": "fēi",
+    "pos": "动"
+  },
+  {
+    "id": 341,
+    "level": "2",
+    "level_raw": "2",
+    "word": "高",
+    "pinyin": "gāo",
+    "pos": "形、名"
+  },
+  {
+    "id": 342,
+    "level": "2",
+    "level_raw": "2",
+    "word": "高中",
+    "pinyin": "gāozhōng",
+    "pos": "名"
+  },
+  {
+    "id": 343,
+    "level": "2",
+    "level_raw": "2",
+    "word": "告诉",
+    "pinyin": "gàosu",
+    "pos": "动"
+  },
+  {
+    "id": 344,
+    "level": "2",
+    "level_raw": "2",
+    "word": "个子",
+    "pinyin": "gèzi",
+    "pos": "名"
+  },
+  {
+    "id": 345,
+    "level": "2",
+    "level_raw": "2（5）",
+    "word": "跟",
+    "pinyin": "gēn",
+    "pos": "介、连、（名、动）"
+  },
+  {
+    "id": 346,
+    "level": "2",
+    "level_raw": "2",
+    "word": "公交车",
+    "pinyin": "gōngjiāochē",
+    "pos": "名"
+  },
+  {
+    "id": 347,
+    "level": "2",
+    "level_raw": "2",
+    "word": "过",
+    "pinyin": "guò",
+    "pos": "动"
+  },
+  {
+    "id": 348,
+    "level": "2",
+    "level_raw": "2",
+    "word": "过来",
+    "pinyin": "guòlái",
+    "pos": "动"
+  },
+  {
+    "id": 349,
+    "level": "2",
+    "level_raw": "2",
+    "word": "过年",
+    "pinyin": "guònián",
+    "pos": "动"
+  },
+  {
+    "id": 350,
+    "level": "2",
+    "level_raw": "2",
+    "word": "过去1",
+    "pinyin": "guòqù",
+    "pos": "动"
+  },
+  {
+    "id": 351,
+    "level": "2",
+    "level_raw": "2",
+    "word": "过",
+    "pinyin": "guo",
+    "pos": "助"
+  },
+  {
+    "id": 352,
+    "level": "2",
+    "level_raw": "2",
+    "word": "还是",
+    "pinyin": "háishi",
+    "pos": "副、连"
+  },
+  {
+    "id": 353,
+    "level": "2",
+    "level_raw": "2",
+    "word": "黑色",
+    "pinyin": "hēisè",
+    "pos": "名"
+  },
+  {
+    "id": 354,
+    "level": "2",
+    "level_raw": "2",
+    "word": "红茶",
+    "pinyin": "hóngchá",
+    "pos": "名"
+  },
+  {
+    "id": 355,
+    "level": "2",
+    "level_raw": "2",
+    "word": "红色",
+    "pinyin": "hóngsè",
+    "pos": "名"
+  },
+  {
+    "id": 356,
+    "level": "2",
+    "level_raw": "2",
+    "word": "后面",
+    "pinyin": "hòumiàn",
+    "pos": "名"
+  },
+  {
+    "id": 357,
+    "level": "2",
+    "level_raw": "2",
+    "word": "花1",
+    "pinyin": "huā",
+    "pos": "动"
+  },
+  {
+    "id": 358,
+    "level": "2",
+    "level_raw": "2（6）",
+    "word": "花2",
+    "pinyin": "huā",
+    "pos": "名、（形）"
+  },
+  {
+    "id": 359,
+    "level": "2",
+    "level_raw": "2",
+    "word": "画",
+    "pinyin": "huà",
+    "pos": "动、名"
+  },
+  {
+    "id": 360,
+    "level": "2",
+    "level_raw": "2",
+    "word": "坏",
+    "pinyin": "huài",
+    "pos": "形"
+  },
+  {
+    "id": 361,
+    "level": "2",
+    "level_raw": "2",
+    "word": "回来",
+    "pinyin": "huílái",
+    "pos": "动"
+  },
+  {
+    "id": 362,
+    "level": "2",
+    "level_raw": "2",
+    "word": "回去",
+    "pinyin": "huíqù",
+    "pos": "动"
+  },
+  {
+    "id": 363,
+    "level": "2",
+    "level_raw": "2",
+    "word": "机场",
+    "pinyin": "jīchǎng",
+    "pos": "名"
+  },
+  {
+    "id": 364,
+    "level": "2",
+    "level_raw": "2",
+    "word": "机票",
+    "pinyin": "jīpiào",
+    "pos": "名"
+  },
+  {
+    "id": 365,
+    "level": "2",
+    "level_raw": "2",
+    "word": "记得",
+    "pinyin": "jìde",
+    "pos": "动"
+  },
+  {
+    "id": 366,
+    "level": "2",
+    "level_raw": "2（4）",
+    "word": "间",
+    "pinyin": "jiān",
+    "pos": "量、（名）"
+  },
+  {
+    "id": 367,
+    "level": "2",
+    "level_raw": "2",
+    "word": "教",
+    "pinyin": "jiāo",
+    "pos": "动"
+  },
+  {
+    "id": 368,
+    "level": "2",
+    "level_raw": "2",
+    "word": "教室",
+    "pinyin": "jiàoshì",
+    "pos": "名"
+  },
+  {
+    "id": 369,
+    "level": "2",
+    "level_raw": "2",
+    "word": "介绍",
+    "pinyin": "jièshào",
+    "pos": "动"
+  },
+  {
+    "id": 370,
+    "level": "2",
+    "level_raw": "2",
+    "word": "进",
+    "pinyin": "jìn",
+    "pos": "动"
+  },
+  {
+    "id": 371,
+    "level": "2",
+    "level_raw": "2",
+    "word": "近",
+    "pinyin": "jìn",
+    "pos": "形"
+  },
+  {
+    "id": 372,
+    "level": "2",
+    "level_raw": "2",
+    "word": "进来",
+    "pinyin": "jìnlái",
+    "pos": "动"
+  },
+  {
+    "id": 373,
+    "level": "2",
+    "level_raw": "2",
+    "word": "进去",
+    "pinyin": "jìnqù",
+    "pos": "动"
+  },
+  {
+    "id": 374,
+    "level": "2",
+    "level_raw": "2",
+    "word": "经常",
+    "pinyin": "jīngcháng",
+    "pos": "副"
+  },
+  {
+    "id": 375,
+    "level": "2",
+    "level_raw": "2",
+    "word": "酒店",
+    "pinyin": "jiǔdiàn",
+    "pos": "名"
+  },
+  {
+    "id": 376,
+    "level": "2",
+    "level_raw": "2（7-9）",
+    "word": "就",
+    "pinyin": "jiù",
+    "pos": "副、（介）"
+  },
+  {
+    "id": 377,
+    "level": "2",
+    "level_raw": "2",
+    "word": "咖啡",
+    "pinyin": "kāfēi",
+    "pos": "名"
+  },
+  {
+    "id": 378,
+    "level": "2",
+    "level_raw": "2",
+    "word": "开始",
+    "pinyin": "kāishǐ",
+    "pos": "动、名"
+  },
+  {
+    "id": 379,
+    "level": "2",
+    "level_raw": "2",
+    "word": "开学",
+    "pinyin": "kāixué",
+    "pos": "动"
+  },
+  {
+    "id": 380,
+    "level": "2",
+    "level_raw": "2",
+    "word": "考",
+    "pinyin": "kǎo",
+    "pos": "动"
+  },
+  {
+    "id": 381,
+    "level": "2",
+    "level_raw": "2",
+    "word": "考试",
+    "pinyin": "kǎoshì",
+    "pos": "动、名"
+  },
+  {
+    "id": 382,
+    "level": "2",
+    "level_raw": "2",
+    "word": "可能",
+    "pinyin": "kěnéng",
+    "pos": "形、名、动"
+  },
+  {
+    "id": 383,
+    "level": "2",
+    "level_raw": "2",
+    "word": "裤子",
+    "pinyin": "kùzi",
+    "pos": "名"
+  },
+  {
+    "id": 384,
+    "level": "2",
+    "level_raw": "2",
+    "word": "快",
+    "pinyin": "kuài",
+    "pos": "形、副"
+  },
+  {
+    "id": 385,
+    "level": "2",
+    "level_raw": "2",
+    "word": "快乐",
+    "pinyin": "kuàilè",
+    "pos": "形"
+  },
+  {
+    "id": 386,
+    "level": "2",
+    "level_raw": "2",
+    "word": "快要",
+    "pinyin": "kuàiyào",
+    "pos": "副"
+  },
+  {
+    "id": 387,
+    "level": "2",
+    "level_raw": "2",
+    "word": "篮球",
+    "pinyin": "lánqiú",
+    "pos": "名"
+  },
+  {
+    "id": 388,
+    "level": "2",
+    "level_raw": "2",
+    "word": "累",
+    "pinyin": "lèi",
+    "pos": "形、动"
+  },
+  {
+    "id": 389,
+    "level": "2",
+    "level_raw": "2",
+    "word": "离",
+    "pinyin": "lí",
+    "pos": "动"
+  },
+  {
+    "id": 390,
+    "level": "2",
+    "level_raw": "2",
+    "word": "里面",
+    "pinyin": "lǐmiàn",
+    "pos": "名"
+  },
+  {
+    "id": 391,
+    "level": "2",
+    "level_raw": "2",
+    "word": "楼",
+    "pinyin": "lóu",
+    "pos": "名"
+  },
+  {
+    "id": 392,
+    "level": "2",
+    "level_raw": "2",
+    "word": "路",
+    "pinyin": "lù",
+    "pos": "名"
+  },
+  {
+    "id": 393,
+    "level": "2",
+    "level_raw": "2",
+    "word": "路上",
+    "pinyin": "lùshang",
+    "pos": "名"
+  },
+  {
+    "id": 394,
+    "level": "2",
+    "level_raw": "2",
+    "word": "旅游",
+    "pinyin": "lǚyóu",
+    "pos": "动"
+  },
+  {
+    "id": 395,
+    "level": "2",
+    "level_raw": "2",
+    "word": "绿茶",
+    "pinyin": "lǜchá",
+    "pos": "名"
+  },
+  {
+    "id": 396,
+    "level": "2",
+    "level_raw": "2（4）",
+    "word": "绿色",
+    "pinyin": "lǜsè",
+    "pos": "名、（形）"
+  },
+  {
+    "id": 397,
+    "level": "2",
+    "level_raw": "2",
+    "word": "慢",
+    "pinyin": "màn",
+    "pos": "形"
+  },
+  {
+    "id": 398,
+    "level": "2",
+    "level_raw": "2",
+    "word": "没意思",
+    "pinyin": "méi yìsi",
+    "pos": ""
+  },
+  {
+    "id": 399,
+    "level": "2",
+    "level_raw": "2（4）",
+    "word": "每",
+    "pinyin": "měi",
+    "pos": "代、（副）"
+  },
+  {
+    "id": 400,
+    "level": "2",
+    "level_raw": "2",
+    "word": "门",
+    "pinyin": "mén",
+    "pos": "名"
+  },
+  {
+    "id": 401,
+    "level": "2",
+    "level_raw": "2",
+    "word": "门口",
+    "pinyin": "ménkǒu",
+    "pos": "名"
+  },
+  {
+    "id": 402,
+    "level": "2",
+    "level_raw": "2",
+    "word": "门票",
+    "pinyin": "ménpiào",
+    "pos": "名"
+  },
+  {
+    "id": 403,
+    "level": "2",
+    "level_raw": "2（5）",
+    "word": "面1",
+    "pinyin": "miàn",
+    "pos": "后缀、（动、名、量）"
+  },
+  {
+    "id": 404,
+    "level": "2",
+    "level_raw": "2",
+    "word": "名",
+    "pinyin": "míng",
+    "pos": "名、量"
+  },
+  {
+    "id": 405,
+    "level": "2",
+    "level_raw": "2",
+    "word": "拿",
+    "pinyin": "ná",
+    "pos": "动"
+  },
+  {
+    "id": 406,
+    "level": "2",
+    "level_raw": "2",
+    "word": "那么",
+    "pinyin": "nàme",
+    "pos": "代、连"
+  },
+  {
+    "id": 407,
+    "level": "2",
+    "level_raw": "2",
+    "word": "那样",
+    "pinyin": "nàyàng",
+    "pos": "代"
+  },
+  {
+    "id": 408,
+    "level": "2",
+    "level_raw": "2",
+    "word": "奶茶",
+    "pinyin": "nǎichá",
+    "pos": "名"
+  },
+  {
+    "id": 409,
+    "level": "2",
+    "level_raw": "2",
+    "word": "奶奶",
+    "pinyin": "nǎinai",
+    "pos": "名"
+  },
+  {
+    "id": 410,
+    "level": "2",
+    "level_raw": "2",
+    "word": "男孩儿",
+    "pinyin": "nánháir",
+    "pos": "名"
+  },
+  {
+    "id": 411,
+    "level": "2",
+    "level_raw": "2",
+    "word": "鸟",
+    "pinyin": "niǎo",
+    "pos": "名"
+  },
+  {
+    "id": 412,
+    "level": "2",
+    "level_raw": "2",
+    "word": "女孩儿",
+    "pinyin": "nǚháir",
+    "pos": "名"
+  },
+  {
+    "id": 413,
+    "level": "2",
+    "level_raw": "2",
+    "word": "旁边",
+    "pinyin": "pángbiān",
+    "pos": "名"
+  },
+  {
+    "id": 414,
+    "level": "2",
+    "level_raw": "2",
+    "word": "跑",
+    "pinyin": "pǎo",
+    "pos": "动"
+  },
+  {
+    "id": 415,
+    "level": "2",
+    "level_raw": "2",
+    "word": "跑步",
+    "pinyin": "pǎobù",
+    "pos": "动"
+  },
+  {
+    "id": 416,
+    "level": "2",
+    "level_raw": "2",
+    "word": "票",
+    "pinyin": "piào",
+    "pos": "名"
+  },
+  {
+    "id": 417,
+    "level": "2",
+    "level_raw": "2",
+    "word": "妻子",
+    "pinyin": "qīzi",
+    "pos": "名"
+  },
+  {
+    "id": 418,
+    "level": "2",
+    "level_raw": "2",
+    "word": "起来",
+    "pinyin": "qǐlái",
+    "pos": "动"
+  },
+  {
+    "id": 419,
+    "level": "2",
+    "level_raw": "2",
+    "word": "前面",
+    "pinyin": "qiánmiàn",
+    "pos": "名"
+  },
+  {
+    "id": 420,
+    "level": "2",
+    "level_raw": "2",
+    "word": "晴",
+    "pinyin": "qíng",
+    "pos": "形"
+  },
+  {
+    "id": 421,
+    "level": "2",
+    "level_raw": "2",
+    "word": "球",
+    "pinyin": "qiú",
+    "pos": "名"
+  },
+  {
+    "id": 422,
+    "level": "2",
+    "level_raw": "2（4）",
+    "word": "让",
+    "pinyin": "ràng",
+    "pos": "动、（介）"
+  },
+  {
+    "id": 423,
+    "level": "2",
+    "level_raw": "2",
+    "word": "肉",
+    "pinyin": "ròu",
+    "pos": "名"
+  },
+  {
+    "id": 424,
+    "level": "2",
+    "level_raw": "2",
+    "word": "商场",
+    "pinyin": "shāngchǎng",
+    "pos": "名"
+  },
+  {
+    "id": 425,
+    "level": "2",
+    "level_raw": "2",
+    "word": "上来",
+    "pinyin": "shànglái",
+    "pos": "动"
+  },
+  {
+    "id": 426,
+    "level": "2",
+    "level_raw": "2",
+    "word": "上面",
+    "pinyin": "shàngmiàn",
+    "pos": "名"
+  },
+  {
+    "id": 427,
+    "level": "2",
+    "level_raw": "2",
+    "word": "上去",
+    "pinyin": "shàngqù",
+    "pos": "动"
+  },
+  {
+    "id": 428,
+    "level": "2",
+    "level_raw": "2",
+    "word": "上网",
+    "pinyin": "shàngwǎng",
+    "pos": "动"
+  },
+  {
+    "id": 429,
+    "level": "2",
+    "level_raw": "2",
+    "word": "身体",
+    "pinyin": "shēntǐ",
+    "pos": "名"
+  },
+  {
+    "id": 430,
+    "level": "2",
+    "level_raw": "2",
+    "word": "生日",
+    "pinyin": "shēngrì",
+    "pos": "名"
+  },
+  {
+    "id": 431,
+    "level": "2",
+    "level_raw": "2（6）",
+    "word": "时",
+    "pinyin": "shí",
+    "pos": "名、（量）"
+  },
+  {
+    "id": 432,
+    "level": "2",
+    "level_raw": "2",
+    "word": "事情",
+    "pinyin": "shìqing",
+    "pos": "名"
+  },
+  {
+    "id": 433,
+    "level": "2",
+    "level_raw": "2",
+    "word": "手",
+    "pinyin": "shǒu",
+    "pos": "名"
+  },
+  {
+    "id": 434,
+    "level": "2",
+    "level_raw": "2",
+    "word": "手表",
+    "pinyin": "shǒubiǎo",
+    "pos": "名"
+  },
+  {
+    "id": 435,
+    "level": "2",
+    "level_raw": "2",
+    "word": "书包",
+    "pinyin": "shūbāo",
+    "pos": "名"
+  },
+  {
+    "id": 436,
+    "level": "2",
+    "level_raw": "2",
+    "word": "舒服",
+    "pinyin": "shūfu",
+    "pos": "形"
+  },
+  {
+    "id": 437,
+    "level": "2",
+    "level_raw": "2",
+    "word": "送",
+    "pinyin": "sòng",
+    "pos": "动"
+  },
+  {
+    "id": 438,
+    "level": "2",
+    "level_raw": "2",
+    "word": "虽然",
+    "pinyin": "suīrán",
+    "pos": "连"
+  },
+  {
+    "id": 439,
+    "level": "2",
+    "level_raw": "2",
+    "word": "所以",
+    "pinyin": "suǒyǐ",
+    "pos": "连"
+  },
+  {
+    "id": 440,
+    "level": "2",
+    "level_raw": "2（6）",
+    "word": "疼",
+    "pinyin": "téng",
+    "pos": "形、（动）"
+  },
+  {
+    "id": 441,
+    "level": "2",
+    "level_raw": "2",
+    "word": "踢",
+    "pinyin": "tī",
+    "pos": "动"
+  },
+  {
+    "id": 442,
+    "level": "2",
+    "level_raw": "2",
+    "word": "题",
+    "pinyin": "tí",
+    "pos": "名"
+  },
+  {
+    "id": 443,
+    "level": "2",
+    "level_raw": "2（5）",
+    "word": "条",
+    "pinyin": "tiáo",
+    "pos": "量、（名）"
+  },
+  {
+    "id": 444,
+    "level": "2",
+    "level_raw": "2",
+    "word": "跳舞",
+    "pinyin": "tiàowǔ",
+    "pos": "动"
+  },
+  {
+    "id": 445,
+    "level": "2",
+    "level_raw": "2（3）（5）",
+    "word": "头",
+    "pinyin": "tóu",
+    "pos": "名、（量）、（形）"
+  },
+  {
+    "id": 446,
+    "level": "2",
+    "level_raw": "2",
+    "word": "外国",
+    "pinyin": "wàiguó",
+    "pos": "名"
+  },
+  {
+    "id": 447,
+    "level": "2",
+    "level_raw": "2",
+    "word": "外面",
+    "pinyin": "wàimiàn",
+    "pos": "名"
+  },
+  {
+    "id": 448,
+    "level": "2",
+    "level_raw": "2",
+    "word": "完",
+    "pinyin": "wán",
+    "pos": "动"
+  },
+  {
+    "id": 449,
+    "level": "2",
+    "level_raw": "2",
+    "word": "万",
+    "pinyin": "wàn",
+    "pos": "数"
+  },
+  {
+    "id": 450,
+    "level": "2",
+    "level_raw": "2",
+    "word": "往",
+    "pinyin": "wǎng",
+    "pos": "动、介"
+  },
+  {
+    "id": 451,
+    "level": "2",
+    "level_raw": "2",
+    "word": "网上",
+    "pinyin": "wǎngshang",
+    "pos": "名"
+  },
+  {
+    "id": 452,
+    "level": "2",
+    "level_raw": "2",
+    "word": "忘",
+    "pinyin": "wàng",
+    "pos": "动"
+  },
+  {
+    "id": 453,
+    "level": "2",
+    "level_raw": "2",
+    "word": "位",
+    "pinyin": "wèi",
+    "pos": "量"
+  },
+  {
+    "id": 454,
+    "level": "2",
+    "level_raw": "2",
+    "word": "为什么",
+    "pinyin": "wèi shénme",
+    "pos": ""
+  },
+  {
+    "id": 455,
+    "level": "2",
+    "level_raw": "2",
+    "word": "希望",
+    "pinyin": "xīwàng",
+    "pos": "动"
+  },
+  {
+    "id": 456,
+    "level": "2",
+    "level_raw": "2",
+    "word": "洗",
+    "pinyin": "xǐ",
+    "pos": "动"
+  },
+  {
+    "id": 457,
+    "level": "2",
+    "level_raw": "2",
+    "word": "洗手间",
+    "pinyin": "xǐshǒujiān",
+    "pos": "名"
+  },
+  {
+    "id": 458,
+    "level": "2",
+    "level_raw": "2",
+    "word": "下来",
+    "pinyin": "xiàlái",
+    "pos": "动"
+  },
+  {
+    "id": 459,
+    "level": "2",
+    "level_raw": "2",
+    "word": "下面",
+    "pinyin": "xiàmiàn",
+    "pos": "名"
+  },
+  {
+    "id": 460,
+    "level": "2",
+    "level_raw": "2",
+    "word": "下去",
+    "pinyin": "xiàqù",
+    "pos": "动"
+  },
+  {
+    "id": 461,
+    "level": "2",
+    "level_raw": "2",
+    "word": "小孩儿",
+    "pinyin": "xiǎoháir",
+    "pos": "名"
+  },
+  {
+    "id": 462,
+    "level": "2",
+    "level_raw": "2",
+    "word": "小时候",
+    "pinyin": "xiǎoshíhou",
+    "pos": "名"
+  },
+  {
+    "id": 463,
+    "level": "2",
+    "level_raw": "2",
+    "word": "笑",
+    "pinyin": "xiào",
+    "pos": "动"
+  },
+  {
+    "id": 464,
+    "level": "2",
+    "level_raw": "2",
+    "word": "姓",
+    "pinyin": "xìng",
+    "pos": "名、动"
+  },
+  {
+    "id": 465,
+    "level": "2",
+    "level_raw": "2",
+    "word": "姓名",
+    "pinyin": "xìngmíng",
+    "pos": "名"
+  },
+  {
+    "id": 466,
+    "level": "2",
+    "level_raw": "2",
+    "word": "颜色",
+    "pinyin": "yánsè",
+    "pos": "名"
+  },
+  {
+    "id": 467,
+    "level": "2",
+    "level_raw": "2",
+    "word": "眼睛",
+    "pinyin": "yǎnjing",
+    "pos": "名"
+  },
+  {
+    "id": 468,
+    "level": "2",
+    "level_raw": "2",
+    "word": "药",
+    "pinyin": "yào",
+    "pos": "名"
+  },
+  {
+    "id": 469,
+    "level": "2",
+    "level_raw": "2",
+    "word": "药店",
+    "pinyin": "yàodiàn",
+    "pos": "名"
+  },
+  {
+    "id": 470,
+    "level": "2",
+    "level_raw": "2",
+    "word": "爷爷",
+    "pinyin": "yéye",
+    "pos": "名"
+  },
+  {
+    "id": 471,
+    "level": "2",
+    "level_raw": "2（3）",
+    "word": "一会儿",
+    "pinyin": "yíhuìr",
+    "pos": "数量、（副）"
+  },
+  {
+    "id": 472,
+    "level": "2",
+    "level_raw": "2",
+    "word": "已经",
+    "pinyin": "yǐjīng",
+    "pos": "副"
+  },
+  {
+    "id": 473,
+    "level": "2",
+    "level_raw": "2",
+    "word": "一起",
+    "pinyin": "yìqǐ",
+    "pos": "副"
+  },
+  {
+    "id": 474,
+    "level": "2",
+    "level_raw": "2",
+    "word": "意思",
+    "pinyin": "yìsi",
+    "pos": "名"
+  },
+  {
+    "id": 475,
+    "level": "2",
+    "level_raw": "2",
+    "word": "阴",
+    "pinyin": "yīn",
+    "pos": "形"
+  },
+  {
+    "id": 476,
+    "level": "2",
+    "level_raw": "2",
+    "word": "因为",
+    "pinyin": "yīnwèi",
+    "pos": "介、连"
+  },
+  {
+    "id": 477,
+    "level": "2",
+    "level_raw": "2",
+    "word": "游",
+    "pinyin": "yóu",
+    "pos": "动"
+  },
+  {
+    "id": 478,
+    "level": "2",
+    "level_raw": "2",
+    "word": "游泳",
+    "pinyin": "yóuyǒng",
+    "pos": "动"
+  },
+  {
+    "id": 479,
+    "level": "2",
+    "level_raw": "2",
+    "word": "有意思",
+    "pinyin": "yǒu yìsi",
+    "pos": ""
+  },
+  {
+    "id": 480,
+    "level": "2",
+    "level_raw": "2",
+    "word": "有时",
+    "pinyin": "yǒushí",
+    "pos": "副"
+  },
+  {
+    "id": 481,
+    "level": "2",
+    "level_raw": "2",
+    "word": "右",
+    "pinyin": "yòu",
+    "pos": "名"
+  },
+  {
+    "id": 482,
+    "level": "2",
+    "level_raw": "2",
+    "word": "右边",
+    "pinyin": "yòubian",
+    "pos": "名"
+  },
+  {
+    "id": 483,
+    "level": "2",
+    "level_raw": "2",
+    "word": "鱼",
+    "pinyin": "yú",
+    "pos": "名"
+  },
+  {
+    "id": 484,
+    "level": "2",
+    "level_raw": "2",
+    "word": "远",
+    "pinyin": "yuǎn",
+    "pos": "形"
+  },
+  {
+    "id": 485,
+    "level": "2",
+    "level_raw": "2",
+    "word": "运动",
+    "pinyin": "yùndòng",
+    "pos": "动、名"
+  },
+  {
+    "id": 486,
+    "level": "2",
+    "level_raw": "2",
+    "word": "站1",
+    "pinyin": "zhàn",
+    "pos": "名"
+  },
+  {
+    "id": 487,
+    "level": "2",
+    "level_raw": "2",
+    "word": "丈夫",
+    "pinyin": "zhàngfu",
+    "pos": "名"
+  },
+  {
+    "id": 488,
+    "level": "2",
+    "level_raw": "2",
+    "word": "这么",
+    "pinyin": "zhème",
+    "pos": "代"
+  },
+  {
+    "id": 489,
+    "level": "2",
+    "level_raw": "2",
+    "word": "这样",
+    "pinyin": "zhèyàng",
+    "pos": "代"
+  },
+  {
+    "id": 490,
+    "level": "2",
+    "level_raw": "2",
+    "word": "着",
+    "pinyin": "zhe",
+    "pos": "助"
+  },
+  {
+    "id": 491,
+    "level": "2",
+    "level_raw": "2（5）",
+    "word": "正",
+    "pinyin": "zhèng",
+    "pos": "副、（形）"
+  },
+  {
+    "id": 492,
+    "level": "2",
+    "level_raw": "2（6）",
+    "word": "周",
+    "pinyin": "zhōu",
+    "pos": "名、（量）"
+  },
+  {
+    "id": 493,
+    "level": "2",
+    "level_raw": "2",
+    "word": "准备",
+    "pinyin": "zhǔnbèi",
+    "pos": "动"
+  },
+  {
+    "id": 494,
+    "level": "2",
+    "level_raw": "2",
+    "word": "自己",
+    "pinyin": "zìjǐ",
+    "pos": "代"
+  },
+  {
+    "id": 495,
+    "level": "2",
+    "level_raw": "2",
+    "word": "走",
+    "pinyin": "zǒu",
+    "pos": "动"
+  },
+  {
+    "id": 496,
+    "level": "2",
+    "level_raw": "2",
+    "word": "走路",
+    "pinyin": "zǒulù",
+    "pos": "动"
+  },
+  {
+    "id": 497,
+    "level": "2",
+    "level_raw": "2",
+    "word": "足球",
+    "pinyin": "zúqiú",
+    "pos": "名"
+  },
+  {
+    "id": 498,
+    "level": "2",
+    "level_raw": "2",
+    "word": "最",
+    "pinyin": "zuì",
+    "pos": "副"
+  },
+  {
+    "id": 499,
+    "level": "2",
+    "level_raw": "2",
+    "word": "左",
+    "pinyin": "zuǒ",
+    "pos": "名"
+  },
+  {
+    "id": 500,
+    "level": "2",
+    "level_raw": "2",
+    "word": "左边",
+    "pinyin": "zuǒbian",
+    "pos": "名"
+  }
+]

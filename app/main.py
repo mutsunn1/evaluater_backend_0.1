@@ -544,6 +544,19 @@ async def get_question(session_id: str):
                         {"index": opt.get("index", chr(65 + i)), "text": opt.get("text", str(opt))}
                         for i, opt in enumerate(item_data["options"])
                     ]
+
+                # Knowledge fence check: validate vocabulary difficulty
+                try:
+                    from services.fence_service import check_question_vocabulary
+                    target_level = int(item_data.get("target_level", "3").replace("HSK ", ""))
+                    fence_result = await check_question_vocabulary(
+                        item_data.get("question_text", ""),
+                        user_hsk_level=target_level,
+                    )
+                    item_data["fence_check"] = fence_result
+                except Exception:
+                    pass  # Fence check is optional, don't fail the whole flow
+
                 state["current_question"] = item_data
                 state["current_item_id"] = item_id
                 state["history"].append(item_data)
@@ -606,9 +619,26 @@ async def submit_answer(session_id: str, request: Request):
         state["answers"].append({"is_correct": is_correct, "score": None, "item_id": item_id})
         result = {"item_id": item_id, "is_correct": is_correct, "feedback": feedback}
     else:
+        # For fill-in-blank and subjective answers, compute TTR and vocabulary profile
+        try:
+            from services.ttr_engine import compute_ttr, compute_vocabulary_profile
+            ttr_result = compute_ttr(answer)
+            vocab_profile = compute_vocabulary_profile(answer)
+            ttr_info = {
+                "ttr": ttr_result["ttr"],
+                "type_count": ttr_result["type_count"],
+                "token_count": ttr_result["token_count"],
+                "weighted_level": vocab_profile["weighted_level"],
+                "known_rate": vocab_profile["known_rate"],
+            }
+        except Exception:
+            ttr_info = {"ttr": None, "message": "TTR 计算失败"}
+
         grade_prompt = (
             f"请评估以下中文作答。题目：{qtext}\n"
-            f"用户作答：{answer}\n\n"
+            f"用户作答：{answer}\n"
+            f"词汇多样性 (TTR): {ttr_info.get('ttr', 'N/A')}\n"
+            f"词汇等级: 加权 HSK {ttr_info.get('weighted_level', 'N/A')}\n\n"
             f"请从以下维度评分（0-100），返回JSON：\n"
             '{"score": 数字, "feedback": "具体评价", "is_correct": true/false}'
         )
@@ -752,6 +782,46 @@ async def get_session_events(session_id: str, session: AsyncSession = Depends(ge
         }
         for e in events
     ]
+
+
+# ---------- 知识围栏与 TTR 相关端点 ----------
+
+@session_router.get("/vocabulary/level/{level}")
+async def get_vocabulary_level(level: int):
+    """获取指定 HSK 等级的词汇统计信息。"""
+    from services.fence_service import get_vocabulary_for_level
+    return await get_vocabulary_for_level(level)
+
+
+@session_router.post("/vocabulary/check")
+async def check_vocabulary(request: Request):
+    """检查文本中的词汇是否在指定等级范围内。"""
+    body = await request.json()
+    text = body.get("text", "")
+    max_level = body.get("max_level", 99)
+    from services.fence_service import check_words_in_vocabulary
+    return await check_words_in_vocabulary(text, max_level)
+
+
+@session_router.post("/ttr/compute")
+async def compute_ttr(request: Request):
+    """计算文本的 TTR（词汇多样性）。"""
+    body = await request.json()
+    text = body.get("text", "")
+    from services.ttr_engine import compute_ttr, compute_mtld, compute_vocabulary_profile
+
+    result = compute_ttr(text)
+    mtld = compute_mtld(text)
+    profile = compute_vocabulary_profile(text)
+
+    return {
+        **result,
+        "mtld": mtld["mtld"],
+        "mtld_segments": mtld["segments"],
+        "level_profile": profile["level_profile"],
+        "known_rate": profile["known_rate"],
+        "weighted_level": profile["weighted_level"],
+    }
 
 
 async def _summarize_thinking(raw_output: str, mas) -> str:
