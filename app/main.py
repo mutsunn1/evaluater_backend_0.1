@@ -581,6 +581,168 @@ async def get_question(session_id: str):
     )
 
 
+@session_router.post("/sessions/{session_id}/stream_answer")
+async def stream_answer(session_id: str, request: Request):
+    """SSE 流式答案评估。逐条推送 thinking 步骤，最后推送完整结果。"""
+    mas = get_mas_instance()
+    if mas is None:
+        raise HTTPException(status_code=503, detail="MAS not initialized")
+
+    body = await request.json()
+    answer = body.get("answer", "")
+    state = _get_session_state(session_id)
+    question = state.get("current_question", {})
+    item_id = state.get("current_item_id", 0)
+
+    if not question:
+        raise HTTPException(status_code=400, detail="No active question")
+
+    qtype = question.get("question_type", "unknown")
+    qtext = question.get("question_text", "")
+
+    # Record answer metadata
+    state["last_action"] = "answer"
+    state["last_answer"] = answer
+    state["thinking_steps"] = []
+
+    async def event_generator():
+        try:
+            yield ": \n\n"  # flush marker
+
+            if qtype in ("multiple_choice", "true_false"):
+                # Objective: instant grading, but still stream thinking for observer + grader
+                if qtype == "multiple_choice":
+                    correct = question.get("correct_answer", "")
+                    is_correct = str(answer).strip().upper() == str(correct).strip().upper()
+                    feedback = "回答正确！" if is_correct else f"回答不正确。正确答案是 {correct}。"
+                else:
+                    correct = question.get("correct_answer", False)
+                    user_bool = str(answer).strip() in ("正确", "True", "true", "对")
+                    is_correct = user_bool == correct
+                    feedback = "回答正确！" if is_correct else f"回答不正确。正确答案是{'正确' if correct else '错误'}。"
+
+                state["answers"].append({"is_correct": is_correct, "score": None, "item_id": item_id})
+
+                # Still run observer + grader for thinking display
+                try:
+                    observer_prompt = (
+                        f"用户作答题目（{qtype}）：\n{answer}\n\n"
+                        f"请一句话分析用户的行为。"
+                    )
+                    observer_output = await mas.call("user_observer_agent", {"query": observer_prompt})
+                except Exception:
+                    observer_output = "用户作答已记录。"
+                yield f"event: thinking\ndata: {json.dumps({'agent': 'user_observer_agent', 'label': '行为观察智能体', 'output': observer_output})}\n\n: \n\n"
+
+                try:
+                    grade_prompt = f"评估用户选择题作答：\n题目：{qtext}\n作答：{answer}\n用一句话给出评价。"
+                    grade_output = await mas.call("grading_agent", {"query": grade_prompt})
+                except Exception:
+                    grade_output = "作答已记录。"
+                yield f"event: thinking\ndata: {json.dumps({'agent': 'grading_agent', 'label': '评分智能体', 'output': grade_output})}\n\n: \n\n"
+
+                state["thinking_steps"] = [
+                    {"agent": "行为观察智能体", "agent_key": "user_observer_agent", "output": observer_output},
+                    {"agent": "评分智能体", "agent_key": "grading_agent", "output": grade_output},
+                ]
+
+            else:
+                # Subjective: compute TTR first, then grade via MAS
+                try:
+                    from services.ttr_engine import compute_ttr, compute_vocabulary_profile
+                    ttr_result = compute_ttr(answer)
+                    vocab_profile = compute_vocabulary_profile(answer)
+                    ttr_info = {
+                        "ttr": ttr_result["ttr"],
+                        "type_count": ttr_result["type_count"],
+                        "token_count": ttr_result["token_count"],
+                        "weighted_level": vocab_profile["weighted_level"],
+                        "known_rate": vocab_profile["known_rate"],
+                    }
+                except Exception:
+                    ttr_info = {"ttr": None, "message": "TTR 计算失败"}
+
+                # Observer analysis
+                try:
+                    observer_prompt = (
+                        f"用户作答：\n{answer}\n\n"
+                        f"请一句话分析：句式复杂度、词汇水平、母语痕迹、反应时间。"
+                    )
+                    observer_output = await mas.call("user_observer_agent", {"query": observer_prompt})
+                except Exception:
+                    observer_output = "用户作答已记录。"
+                yield f"event: thinking\ndata: {json.dumps({'agent': 'user_observer_agent', 'label': '行为观察智能体', 'output': observer_output})}\n\n: \n\n"
+
+                # Grading analysis
+                grade_prompt = (
+                    f"请评估以下中文作答。题目：{qtext}\n"
+                    f"用户作答：{answer}\n"
+                    f"词汇多样性 (TTR): {ttr_info.get('ttr', 'N/A')}\n"
+                    f"词汇等级: 加权 HSK {ttr_info.get('weighted_level', 'N/A')}\n\n"
+                    f"请从以下维度评分（0-100），返回JSON：\n"
+                    '{"score": 数字, "feedback": "具体评价", "is_correct": true/false}'
+                )
+                try:
+                    grade_output = await mas.call("grading_agent", {"query": grade_prompt})
+                except Exception:
+                    grade_output = "作答评估失败。"
+                yield f"event: thinking\ndata: {json.dumps({'agent': 'grading_agent', 'label': '评分智能体', 'output': grade_output})}\n\n: \n\n"
+
+                state["thinking_steps"] = [
+                    {"agent": "行为观察智能体", "agent_key": "user_observer_agent", "output": observer_output},
+                    {"agent": "评分智能体", "agent_key": "grading_agent", "output": grade_output},
+                ]
+
+                grade_data = _extract_json(grade_output)
+                score = grade_data.get("score", 50) if grade_data else 50
+                is_correct = grade_data.get("is_correct", False) if grade_data else False
+                feedback = grade_data.get("feedback", grade_output) if grade_data else grade_output
+                state["answers"].append({"is_correct": is_correct, "score": score, "item_id": item_id})
+
+            # Confidence check
+            stop_decision = should_stop(state["answers"])
+            state["stop_decision"] = stop_decision
+            if stop_decision:
+                result_data = {
+                    "auto_stop": True,
+                    "stop_reason": stop_decision["reason"],
+                    "confidence": stop_decision["confidence"],
+                    "accuracy": stop_decision["accuracy"],
+                }
+            else:
+                stats = compute_confidence(state["answers"])
+                result_data = {
+                    "confidence": stats["confidence"],
+                    "accuracy": stats["accuracy"],
+                }
+
+            # Trigger async profile update in background
+            user_id = state.get("user_id")
+            if user_id:
+                asyncio.create_task(_update_user_profile_async(user_id, state["history"], state["answers"]))
+
+            result_data["item_id"] = item_id
+            if "is_correct" in locals():
+                result_data["is_correct"] = is_correct
+            if "feedback" in locals():
+                result_data["feedback"] = feedback
+
+            yield f"event: answer\ndata: {json.dumps(result_data)}\n\n"
+
+        except Exception as e:
+            yield f"event: error\ndata: {json.dumps({'error': str(e)})}\n\n"
+
+    return StreamingResponse(
+        event_generator(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no",
+        },
+    )
+
+
 @session_router.post("/sessions/{session_id}/answer")
 async def submit_answer(session_id: str, request: Request):
     """Submit user answer. Returns evaluation feedback."""
@@ -652,6 +814,9 @@ async def submit_answer(session_id: str, request: Request):
 
             # Record result
             state["answers"].append({"is_correct": is_correct, "score": score, "item_id": item_id})
+            result = {"item_id": item_id, "score": score, "is_correct": is_correct, "feedback": feedback}
+        except Exception as e:
+            raise HTTPException(status_code=500, detail=f"评分失败: {e}")
             result = {"item_id": item_id, "score": score, "is_correct": is_correct, "feedback": feedback}
         except Exception as e:
             raise HTTPException(status_code=500, detail=f"评分失败: {e}")
